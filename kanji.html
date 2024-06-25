@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢字クリックゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="result" style="display: none;"></div>
+    <div id="introText" class="infoText">今から間違い探しを始めるよ？全部見つけれるかな？<br>間違った漢字をクリックすると色が変わります。</div>
+    <button id="startButton">スタート</button>
+    <div id="gameContainer" style="display: none;">
+        <div id="countdown">10</div>
+        <div id="kanjiGrid"></div>
+        <div id="gameInstruction" class="infoText"></div>
+    </div>
+    <div id="nextButtonContainer" style="display: none;">
+        <button id="nextButton">次へ進む</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
