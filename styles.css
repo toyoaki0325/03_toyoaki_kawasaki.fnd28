@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* スクロールバーが表示されないように */
+}
+
+#startButton, #nextButton {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#startButton:hover, #nextButton:hover {
+  background-color: #45a049;
+}
+
+#countdown {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0; /* 上下の余白を20pxに */
+}
+
+#kanjiGrid {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.kanji {
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.kanji.clicked {
+  color: red;
+}
+
+#result {
+  font-size: 20px;
+  margin-bottom: 20px; 
+  color: black; 
+}
+
+#result.hidden {
+  color: #f0f8ff; 
+}
+
+#gameContainer {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.infoText {
+  font-size: 20px;
+  margin: 20px;
+  max-width: 90%; 
+  line-height: 1.5; 
+}
