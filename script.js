@@ -55,7 +55,7 @@ function displayKanjiGrid(level) {
 	const gridContainer = document.getElementById("kanjiGrid");
 	gridContainer.style.gridTemplateColumns = `repeat(${level.size}, 20px)`;
 	gridContainer.style.gridTemplateRows = `repeat(${level.size}, 20px)`;
-	gridContainer.innerHTML = ""; // 以前のグリッドをクリア
+	gridContainer.innerHTML = ""; 
 
 	for (let i = 0; i < level.size * level.size; i++) {
 			const kanjiElement = document.createElement("div");
